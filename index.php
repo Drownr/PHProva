@@ -11,7 +11,7 @@
 	}
 	else{
 		$contatore = ++$_COOKIE["Biscotto"];
-		setcookie("Biscotto", $contatore);
+		setcookie("Biscotto", $contatore, time() + (86400 * 7));
 		print("Biscotto rilevato! Hai eseguito l'accesso $contatore volte :D <br>");
 	}
 
