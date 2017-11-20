@@ -6,7 +6,7 @@
 	<?php 
 	if (!isset($_COOKIE["Biscotto"])){
 		$contatore = 0;
-		setcookie("Biscotto", $contatore);
+		setcookie("Biscotto", $contatore, time() + (86400 * 7));	//86400 sono i secondi in un giorno!
 		echo "Biscotto settato! Primo accesso eseguito ;) <br>";
 	}
 	else{
