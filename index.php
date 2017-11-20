@@ -1,9 +1,7 @@
 <?php 
-	if (!isset($_COOCKIE["Biscotto")){
-		$contatore = 0;
-		setcookie("Biscotto", $contatore);
-		echo "Biscotto settato! Primo accesso eseguito ;) <br>";
-	}
+	$contatore = 0;
+	setcookie("Biscotto", $contatore);
+	echo "Biscotto settato! Primo accesso eseguito ;) <br>";
 
 ?>
 
