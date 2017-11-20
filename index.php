@@ -1,15 +1,10 @@
 <?php 
-	if (isset($_COOCKIE["Biscotto") == false){
+	if (!isset($_COOCKIE["Biscotto")){
 		$contatore = 0;
 		setcookie("Biscotto", $contatore);
 		echo "Biscotto settato! Primo accesso eseguito ;) <br>";
 	}
-	else{
-		$contatore = $_COOCKIE["Biscotto"] + 1;
-		setcookie("Biscotto", $contatore);
-		print "Il Biscotto dice che hai effettuato " . $contatore . " accessi questa settimana. <br>";
-	}
-	
+
 ?>
 
 <html>
