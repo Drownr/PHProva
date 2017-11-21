@@ -15,8 +15,9 @@
 	}
 	else{
 		$contatore = ++$_COOKIE["Biscotto"];
-		$scadenza = $_COOKIE["DataScadenza"];
-		setcookie("Biscotto", $contatore, ($scadenza - time()));
+		
+		setcookie("Biscotto", $contatore, $_COOKIE["DataScadenza"] - time());
+		
 		print("Biscotto rilevato! Hai eseguito l'accesso $contatore volte :D <br>");
 	}
 
