@@ -1,4 +1,5 @@
 <?php
-	//Questa pagina serve a resettare manualmente il Cookie senza aspettare una settimana
+	//Questa pagina serve a resettare manualmente i Cookie senza aspettare una settimana
 	setcookie("Biscotto");
+	setcookie("DataScadenza");
 ?>
