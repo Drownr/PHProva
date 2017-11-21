@@ -13,10 +13,11 @@
     
 		print("Biscotto settato! Primo accesso eseguito ;) <br>");
 	}
-	else{
+	else {
+		
 		$contatore = ++$_COOKIE["Biscotto"];
 		
-		setcookie("Biscotto", $contatore, $_COOKIE["DataScadenza"] - time());
+		setcookie("Biscotto", $contatore, $_COOKIE["DataScadenza"]);
 		
 		print("Biscotto rilevato! Hai eseguito l'accesso $contatore volte :D <br>");
 	}
