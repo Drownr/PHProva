@@ -11,7 +11,7 @@
 		setcookie("Biscotto", $contatore, $scadenza);
     		setcookie("DataScadenza", $scadenza, $scadenza);
     
-		echo "Biscotto settato! Primo accesso eseguito ;) <br>";
+		print("Biscotto settato! Primo accesso eseguito ;) <br>");
 	}
 	else{
 		$contatore = ++$_COOKIE["Biscotto"];
